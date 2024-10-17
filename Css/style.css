@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: hsl(0, 0%, 94%);
+  display: grid;
+  place-content: center;
+  overflow-x: hidden;
+}
+#card {
+  height: 60vh;
+  width: 90vw;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px 20px 35% 20px;
+  margin-top: 10vh;
+}
+input {
+  width: 23vw;
+  height: 14vw;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 10px;
+  color: black !important;
+  font-size: 5vw;
+  padding: 0 1vw 0 3vw;
+}
+input:active,
+input:focus {
+  outline: 1px solid hsl(259, 100%, 65%);
+}
+#input-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5vh 0;
+}
+.date-label {
+  color: hsl(0, 1%, 44%);
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  margin: 2.5px;
+}
+.button-wrapper {
+  height: 8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hor-line {
+  height: 1px;
+  width: 84vw;
+  background-color: hsl(0, 0%, 86%);
+  position: absolute;
+}
+#convert-button {
+  height: 16vw;
+  aspect-ratio: 1;
+  display: block;
+  background: hsl(259, 100%, 65%);
+  border: none;
+  border-radius: 50%;
+  z-index: 2;
+}
+#convert-button:hover {
+  background: hsl(0, 0%, 8%);
+  cursor: pointer;
+}
+.icon {
+  width: 8vw;
+}
+.output-container {
+  margin: 0 10vw;
+  font-size: 3rem;
+  font-weight: 800;
+  font-style: italic;
+  color: hsl(0, 0%, 8%);
+  position: absolute;
+}
+.output span {
+  margin: 0 1vw 0 0;
+  color: hsl(259, 100%, 65%);
+}
+.error-field {
+  font-size: 2.5vw;
+  font-weight: 400px;
+  font-style: italic;
+  color: red;
+}
+.error-state {
+  color: red;
+  border: 1.5px solid red;
+}
+p.error-state {
+  border: none;
+}
+@media only screen and (min-width: 600px) {
+  #card {
+    height: 50vw;
+    width: 75vw;
+  }
+  #input-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5vh 0;
+  }
+  input {
+    width: 13vw;
+    height: 6vw;
+    font-size: 2.5vw;
+  }
+  .error-field {
+    font-size: 1.3vw;
+  }
+  .date-label {
+    font-size: 1.3vw;
+    padding: 3px 0;
+  }
+  .button-wrapper {
+    width: 75vw;
+    margin: -5vh auto 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .hor-line {
+    height: 1px;
+    width: 62%;
+    background-color: hsl(0, 0%, 86%);
+  }
+  #convert-button {
+    width: 7.5vw;
+    height: 7.5vw;
+    margin: 0vh -60vw 0 0;
+  }
+  .icon {
+    scale: 0.5;
+  }
+  .output-container {
+    margin: 0 10vw;
+  }
+  .output {
+    font-size: 7vw;
+    line-height: 8vw;
+  }
+  .output span {
+    letter-spacing: 7px;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20vh;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
